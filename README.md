@@ -1,6 +1,13 @@
 # docker-nginxconfig.io
 https://github.com/digitalocean/nginxconfig.io in a container!
 
+![Docker Pulls](https://img.shields.io/docker/pulls/griefed/nginxconfig.io?style=flat-square)
+![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/griefed/nginxconfig.io?label=Image%20size&sort=date&style=flat-square)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/griefed/nginxconfig.io?label=Docker%20build&style=flat-square)
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/griefed/nginxconfig.io?label=Docker%20build&style=flat-square)
+![GitHub Repo stars](https://img.shields.io/github/stars/Griefed/docker-nginxconfig.io?label=GitHub%20Stars&style=social)
+![GitHub forks](https://img.shields.io/github/forks/Griefed/docker-nginxconfig.io?label=GitHub%20Forks&style=social)
+
 Creates a Container which runs [digitalocean's](https://github.com/digitalocean) [nginxconfig.io](https://github.com/digitalocean/nginxconfig.io) with, [node:10.19.0-alpine](https://hub.docker.com/_/node) as the base image, as seen on https://www.digitalocean.com/community/tools/nginx
 
 
