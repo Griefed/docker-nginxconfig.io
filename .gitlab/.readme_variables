@@ -11,4 +11,4 @@ export CREATOR_REPONAME='nginxconfig.io'
 export EXAMPLE_SITE_LINK='https://do.co/nginxconfig'
 export CONTAINER_PORT='80'
 export CONTAINER_PORT2='443:443
-export BASE_IMAGE='nginx''
+export BASE_IMAGE='nginx'
