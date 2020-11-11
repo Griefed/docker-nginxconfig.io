@@ -1,0 +1,16 @@
+#!/usr/bin/with-contenv bash
+
+if [ ! -a /config/www/nginxconfig.io.lock ]; then
+  echo "**** Installing NGINXConfig.io  ****"
+  rm -Rf /config/www/*
+  git clone -b \
+    gh-pages \
+      https://github.com/digitalocean/nginxconfig.io.git \
+        /config/www
+  touch /config/www/nginxconfig.io.lock
+fi
+
+# Permission Stuffs
+chown -R \
+  abc:abc \
+    /config/www

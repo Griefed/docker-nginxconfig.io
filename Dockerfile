@@ -1,17 +1,20 @@
-FROM node:10.19.0-alpine
+FROM lsiobase/nginx:3.12
 
-LABEL   maintainer="Griefed <griefed@griefed.de>"
-LABEL   description="Based on https://do.co/nginxconfig using https://github.com/digitalocean/nginxconfig.io \
-A nginx config generator on steroids"
+LABEL maintainer="Griefed <griefed@griefed.de>"
 
-RUN     apk update && apk upgrade && npm install -g serve
+RUN \
+    echo "**** Install dependencies, build tools and stuff ****" && \
+    apk add --no-cache \
+      git && \
+    echo "**** Cleanup ****" && \
+    rm -rf \
+      /root/.cache \
+      /tmp/*
 
-RUN     mkdir /opt/nginxconf.io
+# Copy local files
+COPY root/ /
 
-WORKDIR /opt/nginxconf.io/
+# Communicate ports and volumes to be used
+EXPOSE 80 443
 
-COPY ./nginxconf.io/ .
-
-EXPOSE 5000
-
-CMD ["serve","-s","dist"]
+VOLUME /config
