@@ -1,5 +1,7 @@
 export GITHUB_REPONAME='docker-nginxconfig.io'
 export GITHUB_USERNAME='Griefed'
+export GITHUB_REPONAME_header=docker-nginxconfig.io_header.png
+export GITHUB_REPONAME_screenshot=docker-nginxconfig.io_screenshot.png
 export DOCKERHUB_REPONAME='nginxconfig.io'
 export DOCKERHUB_TAG='latest'
 export DOCKERHUB_USERNAME='griefed'
