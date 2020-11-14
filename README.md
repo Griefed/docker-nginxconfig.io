@@ -1,4 +1,4 @@
-[![docker-nginxconfig.io](img/docker-nginxconfig.io_header.png)](https://github.com/Griefed/docker-nginxconfig.io)
+[![docker-nginxconfig.io](img/docker-nginxconfig.io_header.png)](https://github.com/digitalocean/nginxconfig.io)
 
 ---
 
@@ -11,7 +11,7 @@
 
 docker-nginxconfig.io
 
-NGINX configuration generator on steroids. The only tool you'll ever need to configure your NGINX server.
+NGINX configuration generator on steroids. The only tool you will ever need to configure your NGINX server.
 
 [![nginxconfig.io](img/docker-nginxconfig.io_screenshot.png)](https://github.com/digitalocean/nginxconfig.io)
 
@@ -19,7 +19,7 @@ NGINX configuration generator on steroids. The only tool you'll ever need to con
 
 Creates a Container which runs [digitalocean's](https://github.com/digitalocean) [nginxconfig.io](https://github.com/digitalocean/nginxconfig.io), with [lsiobase/nginx](https://hub.docker.com/r/lsiobase/nginx) as the base image, as seen on https://do.co/nginxconfig.
 
-The lsiobase/ image is a custom base image built with [Alpine linux](https://alpinelinux.org/) and [S6 overlay](https://github.com/just-containers/s6-overlay).
+The lsiobase/nginx image is a custom base image built with [Alpine linux](https://alpinelinux.org/) and [S6 overlay](https://github.com/just-containers/s6-overlay).
 Using this image allows us to use the same user/group ids in the container as on the host, making file transfers much easier
 
 ## Deployment
@@ -31,7 +31,7 @@ version: '3.6'
 services:
   nginxconfig.io:
     container_name: nginxconfig.io
-    image: griefed/nginxconfig.io:latest
+    image: griefed/nginxconfig.io
     restart: unless-stopped
     volumes:
       - ./path/to/config:/config
@@ -95,8 +95,8 @@ services:
       - PUID=1000  # User ID
       - PGID=1000  # Group ID
     ports:
-      - 8080:1234
-      - 
+      - 8080:80
+      - 443:443
 ```
 
 1. Clone the repository: `git clone https://github.com/Griefed/docker-nginxconfig.io.git ./docker-nginxconfig.io`
