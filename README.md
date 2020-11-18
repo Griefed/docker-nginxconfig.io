@@ -1,4 +1,4 @@
-[![docker-nginxconfig.io](img/docker-nginxconfig.io_header.png)](https://github.com/digitalocean/nginxconfig.io)
+[![docker-nginxconfig.io](img/docker-nginxconfig.io_header.png)](https://github.com/Griefed/docker-nginxconfig.io)
 
 ---
 
@@ -19,7 +19,7 @@ NGINX configuration generator on steroids. The only tool you will ever need to c
 
 Creates a Container which runs [digitalocean's](https://github.com/digitalocean) [nginxconfig.io](https://github.com/digitalocean/nginxconfig.io), with [lsiobase/nginx](https://hub.docker.com/r/lsiobase/nginx) as the base image, as seen on https://do.co/nginxconfig.
 
-The lsiobase/nginx image is a custom base image built with [Alpine linux](https://alpinelinux.org/) and [S6 overlay](https://github.com/just-containers/s6-overlay).
+The [lsiobase/nginx](https://hub.docker.com/r/lsiobase/nginx) image is a custom base image built with [Alpine linux](https://alpinelinux.org/) and [S6 overlay](https://github.com/just-containers/s6-overlay).
 Using this image allows us to use the same user/group ids in the container as on the host, making file transfers much easier
 
 ## Deployment
