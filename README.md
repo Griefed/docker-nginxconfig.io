@@ -1,4 +1,4 @@
-[![docker-nginxconfig.io](img/docker-nginxconfig.io_header.png)](https://github.com/Griefed/docker-nginxconfig.io)
+[![docker-nginxconfig.io](https://i.griefed.de/images/2020/11/18/docker-nginxconfig.io_header.png)](https://github.com/Griefed/docker-nginxconfig.io)
 
 ---
 
@@ -13,7 +13,7 @@ docker-nginxconfig.io
 
 NGINX configuration generator on steroids. The only tool you will ever need to configure your NGINX server.
 
-[![nginxconfig.io](img/docker-nginxconfig.io_screenshot.png)](https://github.com/digitalocean/nginxconfig.io)
+[![nginxconfig.io](https://i.griefed.de/images/2020/11/18/docker-nginxconfig.io_screenshot.png)](https://github.com/digitalocean/nginxconfig.io)
 
 ---
 
