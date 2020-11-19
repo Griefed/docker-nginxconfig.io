@@ -48,11 +48,11 @@ test:
     - docker build --tag $CI_REGISTRY_IMAGE:arm .
     - docker push $CI_REGISTRY_IMAGE:arm
 
-publish:
-  stage: publish
-  tags:
-    - shell
-  script:
-    - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD $DOCKER_REGISTRY
-    - docker build --tag $DOCKER_USER/$DOCKER_REPO:arm .
-    - docker push $DOCKER_USER/$DOCKER_REPO:arm
+#publish:
+#  stage: publish
+#  tags:
+#    - shell
+#  script:
+#    - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD $DOCKER_REGISTRY
+#    - docker build --tag $DOCKER_USER/$DOCKER_REPO:arm .
+#    - docker push $DOCKER_USER/$DOCKER_REPO:arm
